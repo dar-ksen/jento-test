@@ -48,7 +48,8 @@ h1,
 @font-face {
     font-family: "Myriad Pro";
     font-display: swap;
-    src: url("../fonts/myriad-pro-regular.wofff") format("woff"), url("../fonts/myriad-pro-regular.woff2") format("woff2");
+    src: url("../fonts/myriad-pro-regular.wofff") format("woff"),
+        url("../fonts/myriad-pro-regular.woff2") format("woff2");
     font-weight: 400;
     font-style: normal;
 }
@@ -166,7 +167,7 @@ input.btn:active {
     color: #9b9bb1;
     display: block;
     font-size: 15px;
-    letter-spacing: .25px;
+    letter-spacing: 0.25px;
     margin-left: 24px;
     padding-left: 24px;
     position: relative;
@@ -186,14 +187,13 @@ input.btn:active {
     transition: background-color 0.5s;
     color: #202020;
     font-size: 18px;
-    letter-spacing: .4px;
+    letter-spacing: 0.4px;
     text-decoration: none;
     border-radius: 10px;
 }
 
 .head-phone:hover {
     background-color: #e5e5e5;
-
 }
 
 .banner {
@@ -261,7 +261,6 @@ input.btn:active {
 .section--brackets {
     padding: 62px 0 60px;
     border-bottom: 1px solid #eee;
-
 }
 
 .brackets {
@@ -297,11 +296,10 @@ input.btn:active {
     margin: 0 auto;
     text-align: center;
     color: #9b9cb1;
-    letter-spacing: .1px;
+    letter-spacing: 0.1px;
     text-align: center;
     max-width: 78%;
 }
-
 
 .brackets__text {
     position: relative;
@@ -314,12 +312,11 @@ input.btn:active {
 
 .brackets__text--cost {
     padding: 30px 0 0 0;
-
 }
 
 .brackets__text--cost::before {
     position: absolute;
-    content: '';
+    content: "";
     width: 60px;
     height: 2px;
     background-color: #ffde46;
@@ -378,7 +375,7 @@ input.btn:active {
 }
 
 .how-work::after {
-    content: '';
+    content: "";
     position: absolute;
     height: 0;
     left: 6.5%;
@@ -397,7 +394,7 @@ input.btn:active {
     font-family: "Arial MT";
     font-size: 17px;
     font-weight: 400;
-    line-height: 22px
+    line-height: 22px;
 }
 
 .how-work__item::before {
@@ -412,7 +409,7 @@ input.btn:active {
     position: relative;
     z-index: 1;
     box-sizing: border-box;
-    content: '';
+    content: "";
     width: 24px;
     height: 24px;
     background-color: #f9fbfb;
@@ -422,7 +419,6 @@ input.btn:active {
 }
 
 .how-work__desc {
-
     margin: 0 0 23px;
 }
 
@@ -461,8 +457,17 @@ input.btn:active {
     height: 46px;
     line-height: 1.28572;
     padding: 13px 12px;
-    transition: border-color ease-in-out .15s box-shadow ease-in-out .15s;
+    transition: border-color ease-in-out 0.15s box-shadow ease-in-out 0.15s;
     width: 100%;
+    outline: none;
+}
+
+.recall-form__input:valid {
+    border-color: green;
+}
+
+.recall-form__input:invalid:not(:placeholder-shown) {
+    border-color: red;
 }
 
 .recall-form__warning {
@@ -481,8 +486,6 @@ input.btn:active {
 
 .recall-form__warning a:hover {
     opacity: 0.75;
-
-
 }
 
 .recall-form__submit {
@@ -538,7 +541,6 @@ input.btn:active {
 }
 
 @media (max-width: 800px) {
-
     .head-slogan {
         display: none;
     }
@@ -599,7 +601,6 @@ input.btn:active {
     .head__container {
         justify-content: space-between;
     }
-
 }
 
 @media (max-width: 540px) {
@@ -612,5 +613,4 @@ input.btn:active {
     .step-list__item {
         width: 100%;
     }
-
 }
