@@ -45,15 +45,6 @@ h1,
     margin-top: 18px;
 } */
 
-@font-face {
-    font-family: "Myriad Pro";
-    font-display: swap;
-    src: url("../fonts/myriad-pro-regular.wofff") format("woff"),
-        url("../fonts/myriad-pro-regular.woff2") format("woff2");
-    font-weight: 400;
-    font-style: normal;
-}
-
 .text-gray {
     color: #8c8c8c;
 }
@@ -106,7 +97,7 @@ input.btn:active {
 }
 
 .head {
-    margin: 55px 20px;
+    margin: 58px 20px 52px;
 }
 
 .head__container {
@@ -150,7 +141,7 @@ input.btn:active {
     font-family: Arial, sans-serif;
     font-size: 25px;
     font-weight: 700;
-    margin-left: 12px;
+    margin-left: 10px;
 }
 
 .head-logo__icon,
@@ -187,7 +178,7 @@ input.btn:active {
     transition: background-color 0.5s;
     color: #202020;
     font-size: 18px;
-    letter-spacing: 0.4px;
+    letter-spacing: 0;
     text-decoration: none;
     border-radius: 10px;
 }
@@ -235,7 +226,7 @@ input.btn:active {
 }
 
 .section--step {
-    padding: 20px 0 15px;
+    padding: 20px 0 31px;
 }
 
 .section--how {
@@ -263,13 +254,18 @@ input.btn:active {
     border-bottom: 1px solid #eee;
 }
 
+.section--form {
+    padding: 55px 0 36px;
+}
+
 .brackets {
     padding: 10px 0 35px;
     position: relative;
 }
 
 .brackets--cost {
-    padding: 10px 0 27px;
+    margin: -5px 0 5px;
+    padding: 10px 0 20px;
 }
 
 .brackets:before,
@@ -294,24 +290,24 @@ input.btn:active {
 
 .brackets__inner {
     margin: 0 auto;
-    text-align: center;
     color: #9b9cb1;
-    letter-spacing: 0.1px;
     text-align: center;
-    max-width: 78%;
 }
 
 .brackets__text {
     position: relative;
     color: #9b9cb1;
-    font-family: "Myriad Pro";
     font-size: 16px;
     font-weight: 400;
-    margin: 0;
+    line-height: 20px;
+    margin: 0 auto;
+    max-width: 754px;
+    letter-spacing: -0.3px;
 }
 
 .brackets__text--cost {
-    padding: 30px 0 0 0;
+    padding: 35px 0 0 0;
+    max-width: 740px;
 }
 
 .brackets__text--cost::before {
@@ -320,7 +316,7 @@ input.btn:active {
     width: 60px;
     height: 2px;
     background-color: #ffde46;
-    top: 0;
+    top: 5px;
     left: calc(50% - 30px);
 }
 
@@ -350,7 +346,7 @@ input.btn:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 38px;
+    margin-bottom: 25px;
 }
 
 .step-item__icon {
@@ -361,14 +357,22 @@ input.btn:active {
     margin-bottom: 20px;
 }
 
+.step-item__icon img {
+    flex: 0 0 auto;
+}
+
 .step-item__descr {
     text-align: center;
     max-width: 210px;
+    color: #000000;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
 }
 
 .how-work {
     position: relative;
-    padding: 35px 40px 0;
+    padding: 30px 40px 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -380,29 +384,25 @@ input.btn:active {
     height: 0;
     left: 6.5%;
     right: 6.5%;
-    bottom: 12px;
+    bottom: 15px;
     border-bottom: 3px dashed #999999;
+    box-shadow: 0 0 0 5px #ffffff;
 }
 
 .how-work__item {
     text-align: center;
-    flex: 0 1 230px;
+    flex: 0 1 232px;
     align-items: center;
     display: flex;
     flex-direction: column;
-    color: #202020;
-    font-family: "Arial MT";
-    font-size: 17px;
-    font-weight: 400;
-    line-height: 22px;
 }
 
 .how-work__item::before {
     content: attr(data-number);
     color: #fee133;
-    font-family: "Arial MT";
     font-size: 40px;
-    margin-bottom: 22px;
+    line-height: 40px;
+    margin-bottom: 12px;
 }
 
 .how-work__item::after {
@@ -419,7 +419,11 @@ input.btn:active {
 }
 
 .how-work__desc {
-    margin: 0 0 23px;
+    margin: 0 0 22px;
+    color: #202020;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 22px;
 }
 
 .recall-form {
@@ -471,7 +475,7 @@ input.btn:active {
 }
 
 .recall-form__warning {
-    margin: 30px 0;
+    margin: 30px 0 34px;
     text-align: center;
     color: #202020;
     font-size: 17px;
@@ -508,7 +512,7 @@ input.btn:active {
     display: flex;
     justify-content: space-between;
     max-width: 1450px;
-    padding: 55px 5px 55px;
+    padding: 50px 5px 60px;
 }
 
 .foot-services-list {
