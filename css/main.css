@@ -384,9 +384,8 @@ input.btn:active {
     height: 0;
     left: 6.5%;
     right: 6.5%;
-    bottom: 15px;
+    bottom: 12px;
     border-bottom: 3px dashed #999999;
-    box-shadow: 0 0 0 5px #ffffff;
 }
 
 .how-work__item {
@@ -416,6 +415,7 @@ input.btn:active {
     border: 5px solid #fee133;
     border-radius: 50%;
     margin-top: auto;
+    box-shadow: 0 0 2px 5px #ffffff;
 }
 
 .how-work__desc {
