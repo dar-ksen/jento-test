@@ -81,7 +81,12 @@ h1,
 
 .btn--submit:hover {
     opacity: 0.75;
-    transform: scale(1.05);
+    transform: scale(1.1);
+}
+
+.btn--submit:active {
+    opacity: 0.8;
+    transform: scale(1);
 }
 
 input.btn:focus,
@@ -405,6 +410,7 @@ input.btn:active {
 }
 
 .how-work__item::after {
+    transition: background-color, box-shadow 0.5s;
     position: relative;
     z-index: 1;
     box-sizing: border-box;
@@ -416,6 +422,11 @@ input.btn:active {
     border-radius: 50%;
     margin-top: auto;
     box-shadow: 0 0 2px 5px #ffffff;
+}
+
+.how-work__item:hover::after {
+    background-color: #fee133;
+    box-shadow: 0 0 5px 5px #fee133;
 }
 
 .how-work__desc {
@@ -533,7 +544,7 @@ input.btn:active {
 
 .foot-services-list__item:hover {
     opacity: 0.75;
-    transform: scale(1.2);
+    transform: scale(1.05);
 }
 
 .foot__copyright {
@@ -557,6 +568,11 @@ input.btn:active {
         font-size: 30px;
     }
 
+    .brackets__text {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
     .recall-form__col {
         width: 100%;
         flex-wrap: wrap;
@@ -578,7 +594,6 @@ input.btn:active {
 
     .how-work__item {
         flex: 0 1 230px;
-        margin-bottom: 30px;
     }
 
     .section--how {
@@ -588,6 +603,8 @@ input.btn:active {
     .foot__body {
         flex-direction: column;
         text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
     }
 
     .foot-logo {
